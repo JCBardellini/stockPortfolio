@@ -1,0 +1,33 @@
+@import "../../styles/variables.scss";
+
+#searchContainer {
+    grid-column: 2/3 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    
+    .searchTitle {
+        display: flex;
+        gap: 5px;
+    }
+    .searchForm {
+        display: flex;
+        align-items: center;
+        position: relative;
+        
+        .searchInput {
+            padding: 10px;
+                border-radius: 5px;
+                border: 1px solid $textColor;
+                width: 200px;
+                margin-right: -1px;
+        }
+        .searchIcon {
+            position: absolute;
+            right: 8px;
+            top: 8px;
+            cursor: pointer;
+        }
+    }
+}
